@@ -3,20 +3,20 @@
 // 78 -> 2
 // 89126 -> 5
 
-// Console.Write("Введите число: ");
-// int number = int.Parse(Console.ReadLine());
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine());
 
-// int QuantityOfNumbers(int number)
-// {
-//     int counter = 0;
-//     while (number > 0)
-//     {
-//         counter++;
-//         number /= 10;
-//     }
-//     return counter;
-// }
-// Console.WriteLine($"Количество цифр в числе {number} -> {(QuantityOfNumbers(number))}");
+int QuantityOfNumbers(int number)
+{
+    int counter = 0;
+    while (number > 0)
+    {
+        number /= 10;
+        counter++;
+    }
+    return counter;
+}
+Console.WriteLine($"Количество цифр в числе {number} -> {(QuantityOfNumbers(number))}");
 
 
 
@@ -53,24 +53,24 @@
 
 
 
-int[] array = new int[8];
-FillArray(array);
-ShowArray(array);
+// int[] array = new int[8];
+// FillArray(array);
+// ShowArray(array);
 
-void FillArray(int[] arr)
-{
-    for(int i = 0; i < arr.Length; i++)
-    {
-        arr[i] = new Random().Next(0, 2);
-    }
-}
-void ShowArray(int[] arr)
-{
-    foreach (int element in arr)
-    {
-        Console.Write($"{element} ");
-    }
-}
+// void FillArray(int[] arr)
+// {
+//     for(int i = 0; i < arr.Length; i++)
+//     {
+//         arr[i] = new Random().Next(0, 2);
+//     }
+// }
+// void ShowArray(int[] arr)
+// {
+//     foreach (int element in arr)
+//     {
+//         Console.Write($"{element} ");
+//     }
+// }
 
 
 
