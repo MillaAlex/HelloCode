@@ -9,8 +9,8 @@ int n2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число: ");
 int n3 = Convert.ToInt32(Console.ReadLine());
 
-if (n1 < n2 + n3 && n2 < n1 + n3 && n3 < n1 + n2) Console.Write("Существует");
-else Console.Write("Не существует");
+// if (n1 < n2 + n3 && n2 < n1 + n3 && n3 < n1 + n2) Console.Write("Существует");
+// else Console.Write("Не существует");
 
 bool TriangleCheck(int n1, int n2, int n3)
 {
