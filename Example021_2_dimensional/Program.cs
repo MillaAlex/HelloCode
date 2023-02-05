@@ -4,32 +4,32 @@
 // // 5 -2 33 -2
 // // 77 3 8 1
 
-// Console.Write("Введите размер m: ");
-// int m = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите размер n: ");
-// int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите размер m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите размер n: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-// int[,] arr = new int[m, n];
-// for (int i = 0; i < arr.GetLength(0); i++)
-// {
-//     for (int j = 0; j < arr.GetLength(1); j++)
-//     {
-//         arr[i, j] = new Random().Next(-9, 10);
-//     }
-// }
-// PrintArr(arr);
-// void PrintArr(int[,] arry)
-// {
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < arr.GetLength(1); j++)
-//         {
-//             // Console.Write($"{arry[i, j]}\t");   // \t = табуляция
-//             Console.Write($"{arry[i, j], 4}"); // аккуратный вывод в таблицу
-//         }
-//         Console.WriteLine();
-//     }
-// }
+int[,] arr = new int[m, n];
+for (int i = 0; i < arr.GetLength(0); i++)
+{
+    for (int j = 0; j < arr.GetLength(1); j++)
+    {
+        arr[i, j] = new Random().Next(-9, 10);
+    }
+}
+PrintArr(arr);
+void PrintArr(int[,] arry)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            // Console.Write($"{arry[i, j]}\t");   // \t = табуляция
+            Console.Write($"{arry[i, j], 4}"); // аккуратный вывод в таблицу
+        }
+        Console.WriteLine();
+    }
+}
 
 
 
@@ -40,32 +40,31 @@
 // 1 2 3 4
 // 2 3 4 5
 
-// Console.Write("Введите размер m: ");
-// int m = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите размер n: ");
-// int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите размер m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите размер n: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-// int[,] arr = new int[m, n];
-// for (int i = 0; i < arr.GetLength(0); i++)
-// {
-//     for (int j = 0; j < arr.GetLength(1); j++)
-//     {
-//         arr[i, j] = i + j;
-//     }
-// }
-// PrintArr(arr);
-// void PrintArr(int[,] arry)
-// {
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < arr.GetLength(1); j++)
-//         {
-//             // Console.Write($"{arry[i, j]}\t");   // \t = табуляция
-//             Console.Write($"{arry[i, j], 4}"); // аккуратный вывод в таблицу
-//         }
-//         Console.WriteLine();
-//     }
-// }
+int[,] arr = new int[m, n];
+for (int i = 0; i < arr.GetLength(0); i++)
+{
+    for (int j = 0; j < arr.GetLength(1); j++)
+    {
+        arr[i, j] = i + j;
+    }
+}
+PrintArr(arr);
+void PrintArr(int[,] arry)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write($"{arry[i, j], 4}"); 
+        }
+        Console.WriteLine();
+    }
+}
 
 
 // Задача 49: Задайте двумерный массив. Найдите элементы, у которых оба индекса не чётные,
@@ -172,7 +171,6 @@ Console.Write($"Сумма элементов главной диагонали:
 int[,] array = new int[5, 5];
 array = FillArray(array);
 
-
 int[,] FillArray(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
@@ -184,9 +182,6 @@ int[,] FillArray(int[,] arr)
     }
     return arr;
 }
-
-
-
 void PrintArray(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
@@ -198,9 +193,7 @@ void PrintArray(int[,] arr)
         Console.WriteLine();
     }
 }
-
 PrintArray(array);
-
 void DiogonalSumm(int [,] arr)
 {
     int sum = 0;
